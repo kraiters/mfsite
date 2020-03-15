@@ -1,0 +1,255 @@
+<!doctype html>
+	<html lang="ru">
+		<head>
+			<meta charset="utf-8">
+			<title>BuyGold</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+			<link rel="stylesheet" href="../style/style.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		</head>
+		<body>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+					  		<button
+								class="navbar-toggler"
+					    		type="button"
+					    		data-toggle="collapse"
+					    		data-target="#navbarCollapse"
+					    		aria-controls="navbarCollapse"
+					    		aria-expanded="false"
+					    		aria-label="Toggle navigation">
+					    		<span class="navbar-toggler-icon"></span>
+					  		</button>
+							<div class="collapse navbar-collapse" id="navbarCollapse">
+							    <ul class="navbar-nav mr-auto" id="navAccordion">
+							   	    <li class="nav-item active">
+							        	<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+							      	</li>
+							      	<li class="nav-item">
+							        	<a class="nav-link" href="../article/forus.html">О нас</a>
+							      	</li>
+							      	<li class="nav-item">
+							        	<a
+							          	class="nav-link nav-link-collapse"
+							          	href="#"
+							          	id="hasSubItems"
+							          	data-toggle="collapse"
+							          	data-target="#collapseSubItems2"
+							          	aria-controls="collapseSubItems2"
+							          	aria-expanded="false"
+							        	>Как заработать голд</a>
+							                <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+							                  <li class="nav-item">
+							                   <a class="nav-link" href="../article/farm.html">
+							                   <span class="nav-link-text">Гайд по фарму</span>
+							                  </a>
+							                  </li>
+							          <li class="nav-item">
+							            <a class="nav-link" href="../article/auc.html">
+							              <span class="nav-link-text">Фарм аукциона</span>
+							            </a>
+							          </li>
+							        </ul>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../article/garanties.html">Гарантии</a>
+							      </li>
+							      <li class="nav-item">
+							        <a
+							          class="nav-link nav-link-collapse"
+							          href="#"
+							          id="hasSubItems"
+							          data-toggle="collapse"
+							          data-target="#collapseSubItems4"
+							          aria-controls="collapseSubItems4"
+							          aria-expanded="false"
+							        >Продажа</a>
+							        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+							          <li class="nav-item">
+							            <a class="nav-link" href="../article/goldcircle.html">
+							              <span class="nav-link-text">Продажа золота</span>
+							            </a>
+							          </li>
+							          <li class="nav-item">
+							            <a class="nav-link" href="../article/leveling.html">
+							              <span class="nav-link-text">Левелинг/Достижения/Профессии</span>
+							            </a>
+							          </li>
+							        </ul>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../article/comments.html">Отзывы</a>
+							      </li>
+							    </ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-2 col-sm-12 login-page">
+					  <div class="form">
+					    <form class="register-form">
+					      <input type="text" placeholder="name"/>
+					      <input type="password" placeholder="password"/>
+					      <input type="text" placeholder="email address"/>
+					      <button>create</button>
+					      <p class="message">Already registered? <a href="#">Sign In</a></p>
+					    </form>
+					    <form class="login-form">
+					      <input type="text" placeholder="username"/>
+					      <input type="password" placeholder="password"/>
+					      <button>login</button>
+					      <p class="message">Not registered? <a href="#">Create an account</a></p>
+					    </form>
+					  </div>
+					</div>
+					<div class="col-md-9 col-sm-12">
+						<h2 class="foot">Бланк заказа</h2>
+						<p>Инструкция к оплате:</p>
+							<ol>
+								<li>Выберите сервер</li>
+								<li>Введите сумму для оплаты</li>
+								<li>Укажите свои данные</li>
+								<li>Выберите вариант оплаты и оплатите</li>
+								<li>Наш оператор с вами свяжется в течении 10-30 минут* **</li>
+							</ol>
+                    </div>
+				</div>
+				<div class="row text-center menu">
+					<div class="col-md-6 col-sm-12 menu">
+						<p>Заплачу</p>
+						<input type="number" id="price">
+					</div>
+					<div class="col-md-6 col-sm-12 menu">
+						<p>Получу</p>
+						<input type="number" class="gold" disabled="true" name="gold">
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<form>
+							<select id="servers">
+								<option>--Выберите сервер--</option>
+								<option value="circle" >WoW Circle x5</option>
+								<option value="scorgue">Sirus(Scorgue x2)</option>
+								<option value="frostmourne">Sirus(Frostmourne x1)</option>
+								<option value="isengard">EzWoW(Isengard)</option>
+								<option value="icecrown">Warmane(Icecrown x7)</option>
+								<option value="lordaeron">Warmane(Lordaeron x1)</option>
+							</select>
+						</form>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<form>
+							<select>
+								<option>--Выберите фракцию--</option>
+								<option>Орда</option>
+								<option>Альянс</option>
+							</select>
+						</form>
+					</div>
+					<div class="col-md-6 col-sm-12 menu">
+						<p>Ник на сервере</p>
+						<input type="text" class="nickname">
+					</div>
+					<div class="col-md-6 col-sm-12 menu">
+						<p>Ваш e-mail</p>
+						<input type="email" class="email">
+					</div>
+					<div class="col-12">
+						<form>
+							<select id="servers">
+								<option>--Выберите вариант оплаты--</option>
+								<option>Webmoney</option>
+								<option>Qiwi</option>
+								<option>Yandex Money</option>
+								<option>Xsolla(более 80 вариантов оплаты)</option>
+								<option>Visa/Mastercard</option>
+							</select>
+						</form>
+					</div>
+					<div class="col-12 ">
+						<button type="button" class="btn btn-primary">Купить</button>
+					</div>
+				</div>
+				<div class="col-12 smtext">
+					<p>*Если заказанной вами суммы нет в наличии вам сообщат
+						<br>Тогда время ожидания заказа может увеличиться, Вам будет выдана
+						<br>скидка 20% на текущий или следующий заказ
+						<br>или если вы не захотите ждать мы вернем вам сумму оплаты</p>
+					<p>**Оператор уточнит у вас вариант перевода средств.
+						<br>Помните, что для персонажей меньше 10 уроня перевод через аукцион или почту
+						<br>недоступны. В таком случае золото Вам передадут через обмен</p>
+				</div>
+				<div class="row d-flex justify-content-between border-top border-bottom">
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/webmoney.png" alt="" class="icon"></div>
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/qiwi.png" alt="" class="icon"></div>
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/yandex.png" alt="" class="icon"></div>
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/xsolla.png" alt="" class="icon"></div>
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/visa.png" alt="" class="icon"></div>
+					<div class="col-md-2 col-sm-12"><img src="../img/icon/mastercard.png" alt="" class="icon"></div>
+				</div>
+				<div class="row">
+					<div class="col-12 footer border-bottom smtext">
+						<span>Copiraight by <strong>Kraiters</strong> Большинство материалов взято с сайта<a href="http://www.igs.su">http://www.igs.su</a> с разрешения владельцев сайта</span>
+					</div>
+				</div>
+			</div>
+    			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+				<script>
+				$(document).ready(function() {
+					$('.nav-link-collapse').on('click', function() {
+						$('.nav-link-collapse').not(this).removeClass('nav-link-show');
+						$(this).toggleClass('nav-link-show');
+					});
+				});
+
+				$('.message a').click(function(){
+	   				$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+				});
+
+				$('#servers').on('change', function (e){
+					e.preventDefault();
+					var selectedCountry = $(this).children("option:selected").val();
+					console.log(selectedCountry);
+					var price = $('#price').val();
+						if (selectedCountry=='circle') {
+							var gold=price * 301;
+							$('input[name="gold"]').val(gold);
+						}
+						else if (selectedCountry=='scorgue') {
+							var gold=price * 95;
+							$('input[name="gold"]').val(gold);
+						}
+						else if (selectedCountry=='frostmourne') {
+							var gold=price * 79;
+							$('input[name="gold"]').val(gold);
+						}
+						else if (selectedCountry=='isengard') {
+							var gold=price * 36;
+							$('input[name="gold"]').val(gold);
+						}
+						else if (selectedCountry=='icecrown') {
+							var gold=price * 67;
+							$('input[name="gold"]').val(gold);
+						}
+						else if (selectedCountry=='lordaeron') {
+							var gold=price * 54;
+							$('input[name="gold"]').val(gold);
+						}
+					});
+
+				/*["circle","301"],
+				["scorgue","95"],
+				["frostmourne","79"],
+				["isengard","36"],
+				["icecrown","67"],
+				["lordaeron","54"],*/
+
+
+				</script>
+    	</body>
+	</html>

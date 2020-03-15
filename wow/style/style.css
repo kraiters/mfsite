@@ -79,6 +79,7 @@ div.pad
 .fbcomm
 {
 	background-color: white;
+	z-index: 1;
 }
 .gallery
 {	margin-left: 40%;
